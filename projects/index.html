@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Milo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top left, #1f1c2c, #928dab);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      margin: 0;
+    }
+    .container {
+      max-width: 480px;
+      width: 100%;
+    }
+    /* Card */
+    .project-card {
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    h1 {
+      margin-bottom: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    h2 {
+      margin: 0;
+      font-weight: 600;
+    }
+    p {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.6;
+      opacity: 0.9;
+      margin: 0;
+    }
+    a {
+      color: #a0aaff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+    /* Transparent pill button */
+    .pill-button {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      padding: 0.4rem 1.2rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      user-select: none;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      cursor: default;
+      align-self: center;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+      transition: background 0.3s ease;
+    }
+    .pill-button:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Projects</h1>
+
+    <section class="project-card">
+      <h2>gzz.bio</h2>
+      <p>A modern personal bio website project — currently in active development.</p>
+      <a href="" target="_blank" rel="noopener">View on GitHub</a>
+      <span class="pill-button" aria-label="Project status: In Development">In Development</span>
+    </section>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
